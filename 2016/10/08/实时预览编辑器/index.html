@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>实时预览编辑器 | 张泽人的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Markdown 本身就是一个标记语言，可以通过某种方式转换成别的文本格式，本质上转换的过程其实就是做正则解析替换。
+在自己动手操作需要解决几个问题：
+
+如何将markdown格式字符串转成html
+可以使用一个第三方包：marked
+
+
+给html设置样式
+网上有很多markdown的css,这里在github引用一个
+
+
+给代码块设置颜色高亮
+引入插件highlight.js
+
+
+
+现在让我们">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实时预览编辑器">
+<meta property="og:url" content="http://yoursite.com/2016/10/08/实时预览编辑器/index.html">
+<meta property="og:site_name" content="张泽人的个人博客">
+<meta property="og:description" content="Markdown 本身就是一个标记语言，可以通过某种方式转换成别的文本格式，本质上转换的过程其实就是做正则解析替换。
+在自己动手操作需要解决几个问题：
+
+如何将markdown格式字符串转成html
+可以使用一个第三方包：marked
+
+
+给html设置样式
+网上有很多markdown的css,这里在github引用一个
+
+
+给代码块设置颜色高亮
+引入插件highlight.js
+
+
+
+现在让我们">
+<meta property="og:updated_time" content="2016-10-08T07:23:59.942Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="实时预览编辑器">
+<meta name="twitter:description" content="Markdown 本身就是一个标记语言，可以通过某种方式转换成别的文本格式，本质上转换的过程其实就是做正则解析替换。
+在自己动手操作需要解决几个问题：
+
+如何将markdown格式字符串转成html
+可以使用一个第三方包：marked
+
+
+给html设置样式
+网上有很多markdown的css,这里在github引用一个
+
+
+给代码块设置颜色高亮
+引入插件highlight.js
+
+
+
+现在让我们">
+  
+    <link rel="alternate" href="/atom.xml" title="张泽人的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">张泽人的个人博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="自己动手做一个markdown-实时预览编辑器" class="article article-type-自己动手做一个markdown" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/08/实时预览编辑器/" class="article-date">
+  <time datetime="2016-10-08T03:51:49.000Z" itemprop="datePublished">2016-10-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      实时预览编辑器
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Markdown 本身就是一个标记语言，可以通过某种方式转换成别的文本格式，本质上转换的过程其实就是做正则解析替换。</p>
+<p>在自己动手操作需要解决几个问题：</p>
+<ul>
+<li>如何将<code>markdown</code>格式字符串转成<code>html</code><ul>
+<li>可以使用一个第三方包：marked</li>
+</ul>
+</li>
+<li>给html设置样式<ul>
+<li>网上有很多markdown的css,这里在github引用一个</li>
+</ul>
+</li>
+<li>给代码块设置颜色高亮<ul>
+<li>引入插件<a href="https://highlightjs.org/" target="_blank" rel="external">highlight.js</a></li>
+</ul>
+</li>
+</ul>
+<p>现在让我们自己动手实践一下具体的操作吧。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">&lt;head lang=&quot;en&quot;&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt;实时预览编辑器&lt;/title&gt;</div><div class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/github-markdown.css&quot;/&gt;</div><div class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;highlight/styles/default.css&quot;&gt;</div><div class="line">    &lt;script src=&quot;highlight/highlight.pack.js&quot;&gt;&lt;/script&gt;</div><div class="line">    &lt;script&gt;hljs.initHighlightingOnLoad()&lt;/script&gt;</div><div class="line">    &lt;style&gt;</div><div class="line">        .markdown-body &#123;</div><div class="line">            box-sizing: border-box;</div><div class="line">            min-width: 200px;</div><div class="line">            max-width: 980px;</div><div class="line">            margin: 0 auto;</div><div class="line">            padding: 45px;</div><div class="line">        &#125;</div><div class="line">    &lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">    &lt;div&gt;</div><div class="line">        &lt;textarea name=&quot;&quot; id=&quot;md&quot; cols=&quot;50&quot; rows=&quot;20&quot;&gt;&lt;/textarea&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div&gt;</div><div class="line">       &lt;pre&gt;&lt;code&gt;</div><div class="line">           var foo = &apos;bar&apos;;</div><div class="line">           console.log(foo);</div><div class="line"></div><div class="line">           function fn() &#123;</div><div class="line">           hljs.initHighlightingOnLoad();</div><div class="line">           &#125;</div><div class="line">       &lt;/code&gt;&lt;/pre&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">    &lt;div id=&quot;container&quot; class=&quot;markdown-body&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;script src=&quot;js/marked.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;script&gt;</div><div class="line">    var oMd=document.querySelector(&quot;#md&quot;);</div><div class="line">    var oContainer=document.querySelector(&quot;#container&quot;);</div><div class="line">    oMd.addEventListener(&quot;keyup&quot;, function () &#123;</div><div class="line">        var mdStr=this.value;</div><div class="line">        oContainer.innerHTML= marked(mdStr);</div><div class="line"></div><div class="line">    &#125;);</div><div class="line">&lt;/script&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/10/08/实时预览编辑器/" data-id="ciu0vlwii0000ugtozb526bcp" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编辑器/">编辑器</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/12/08/canvas基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">canvas基础</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/canvas/">canvas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编辑器/">编辑器</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/canvas/" style="font-size: 10px;">canvas</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/10/08/实时预览编辑器/">实时预览编辑器</a>
+          </li>
+        
+          <li>
+            <a href="/2015/12/08/canvas基础/">canvas基础</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 Karissa<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
