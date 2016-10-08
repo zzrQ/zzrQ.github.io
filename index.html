@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>张泽人的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="张泽人的个人博客">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="张泽人的个人博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="张泽人的个人博客">
+  
+    <link rel="alternate" href="/atom.xml" title="张泽人的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">张泽人的个人博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-canvas基础" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/12/08/canvas基础/" class="article-date">
+  <time datetime="2015-12-07T16:00:00.000Z" itemprop="datePublished">2015-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/08/canvas基础/">canvas基础</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><h4 id="获取绘图环境"><a href="#获取绘图环境" class="headerlink" title="获取绘图环境"></a>获取绘图环境</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">canvas.getContext();</div></pre></td></tr></table></figure>
+<h4 id="设置宽和高"><a href="#设置宽和高" class="headerlink" title="设置宽和高"></a>设置宽和高</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">canvas.width = 500;</div><div class="line">canvas.height = 500;</div></pre></td></tr></table></figure>
+<h2 id="Context方法"><a href="#Context方法" class="headerlink" title="Context方法"></a>Context方法</h2><h4 id="设置路径的起点"><a href="#设置路径的起点" class="headerlink" title="设置路径的起点"></a>设置路径的起点</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.moveTo(x, y);</div></pre></td></tr></table></figure>
+<h4 id="画路径点"><a href="#画路径点" class="headerlink" title="画路径点"></a>画路径点</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.lineTo(x, y);</div></pre></td></tr></table></figure>
+<h4 id="根据当前路径进行描边"><a href="#根据当前路径进行描边" class="headerlink" title="根据当前路径进行描边"></a>根据当前路径进行描边</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.stroke();</div></pre></td></tr></table></figure>
+<h4 id="根据当前路径进行填充"><a href="#根据当前路径进行填充" class="headerlink" title="根据当前路径进行填充"></a>根据当前路径进行填充</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.fill();</div></pre></td></tr></table></figure>
+<h4 id="清除路径"><a href="#清除路径" class="headerlink" title="清除路径"></a>清除路径</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.beginPath();</div></pre></td></tr></table></figure>
+<h4 id="闭合路径"><a href="#闭合路径" class="headerlink" title="闭合路径"></a>闭合路径</h4><p> 从当前结束路径的结束点到开始点连一条路径。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.closePath();</div></pre></td></tr></table></figure></p>
+<h4 id="清除画布"><a href="#清除画布" class="headerlink" title="清除画布"></a>清除画布</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.clearRect(x, y, w, h);</div></pre></td></tr></table></figure>
+<h4 id="画矩形路径"><a href="#画矩形路径" class="headerlink" title="画矩形路径"></a>画矩形路径</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.rect(x, y, w, h);</div></pre></td></tr></table></figure>
+<h4 id="画描边矩形"><a href="#画描边矩形" class="headerlink" title="画描边矩形"></a>画描边矩形</h4><p>该方法不会产生任何路径<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.strokeRect(x, y, w, h);</div></pre></td></tr></table></figure></p>
+<h4 id="画填充矩形"><a href="#画填充矩形" class="headerlink" title="画填充矩形"></a>画填充矩形</h4><p>该方法不会产生任何路径<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.fillRect(x, y, w, h);</div></pre></td></tr></table></figure></p>
+<h4 id="画弧路径"><a href="#画弧路径" class="headerlink" title="画弧路径"></a>画弧路径</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.arc(x, y, r, startRadian, endRadian, 是否逆时针画(可选参数));</div></pre></td></tr></table></figure>
+<h4 id="图像绘制"><a href="#图像绘制" class="headerlink" title="图像绘制"></a>图像绘制</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// 三参数</div><div class="line">context.drawImage(图像资源对象，指定绘制的x轴坐标，指定绘制的y轴坐标，);</div><div class="line">// 五参数</div><div class="line">context.drawImage(图像资源对象，指定绘制的x轴坐标，指定绘制的y轴坐标，</div><div class="line">    指定绘制的宽度，指定绘制的高度);</div><div class="line">// 九参数</div><div class="line">context.drawImage(图像资源对象，</div><div class="line">    指定裁剪的x轴坐标，指定裁剪的y轴坐标，指定裁剪的宽度，指定裁剪的高度，</div><div class="line">    指定绘制的x轴坐标，指定绘制的y轴坐标，指定绘制的宽度，指定绘制的高度);</div></pre></td></tr></table></figure>
+<h4 id="设置虚拟样式"><a href="#设置虚拟样式" class="headerlink" title="设置虚拟样式"></a>设置虚拟样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.setLineDash(代表虚线绘制的长度的数组);</div></pre></td></tr></table></figure>
+<h4 id="获取虚拟样式"><a href="#获取虚拟样式" class="headerlink" title="获取虚拟样式"></a>获取虚拟样式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.getLineDash();</div></pre></td></tr></table></figure>
+<h2 id="Context属性"><a href="#Context属性" class="headerlink" title="Context属性"></a>Context属性</h2><h4 id="描边色"><a href="#描边色" class="headerlink" title="描边色"></a>描边色</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.strokeStyle = 颜色值;</div></pre></td></tr></table></figure>
+<h4 id="填充色"><a href="#填充色" class="headerlink" title="填充色"></a>填充色</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.fillStyle = 颜色值;</div></pre></td></tr></table></figure>
+<h4 id="线宽"><a href="#线宽" class="headerlink" title="线宽"></a>线宽</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.lineWidth = 10;</div></pre></td></tr></table></figure>
+<h4 id="线帽"><a href="#线帽" class="headerlink" title="线帽"></a>线帽</h4><p> 默认值为butt<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.lineCap = &apos;butt&apos; || &apos;round&apos; || &apos;square&apos;;</div></pre></td></tr></table></figure></p>
+<h4 id="线交点"><a href="#线交点" class="headerlink" title="线交点"></a>线交点</h4><p> 默认值为miter<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.lineJoin = &apos;miter&apos; || &apos;round&apos; || &apos;bevel&apos;;</div></pre></td></tr></table></figure></p>
+<h4 id="虚线偏移量"><a href="#虚线偏移量" class="headerlink" title="虚线偏移量"></a>虚线偏移量</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.lineDashOffset = 偏移量;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/12/08/canvas基础/" data-id="ciu0m5ogh00004stov6cv8bf4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/canvas/">canvas</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/canvas/">canvas</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/canvas/" style="font-size: 10px;">canvas</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/12/08/canvas基础/">canvas基础</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 张泽人<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
