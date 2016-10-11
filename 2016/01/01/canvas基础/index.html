@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="canvas," />
 
 
 
@@ -84,15 +84,31 @@
 
 
 
-<meta name="description" content="信是所望之事的开端，是未见之事的确据。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="张泽人的个人博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="canvas获取绘图环境1canvas.getContext();
+设置宽和高12canvas.width = 500;canvas.height = 500;
+Context方法设置路径的起点1context.moveTo(x, y);
+画路径点1context.lineTo(x, y);
+根据当前路径进行描边1context.stroke();
+根据当前路径进行填充1context.fill(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="canvas基础">
+<meta property="og:url" content="http://yoursite.com/2016/01/01/canvas基础/index.html">
 <meta property="og:site_name" content="张泽人的个人博客">
-<meta property="og:description" content="信是所望之事的开端，是未见之事的确据。">
+<meta property="og:description" content="canvas获取绘图环境1canvas.getContext();
+设置宽和高12canvas.width = 500;canvas.height = 500;
+Context方法设置路径的起点1context.moveTo(x, y);
+画路径点1context.lineTo(x, y);
+根据当前路径进行描边1context.stroke();
+根据当前路径进行填充1context.fill(">
+<meta property="og:updated_time" content="2016-10-11T10:08:22.796Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="张泽人的个人博客">
-<meta name="twitter:description" content="信是所望之事的开端，是未见之事的确据。">
+<meta name="twitter:title" content="canvas基础">
+<meta name="twitter:description" content="canvas获取绘图环境1canvas.getContext();
+设置宽和高12canvas.width = 500;canvas.height = 500;
+Context方法设置路径的起点1context.moveTo(x, y);
+画路径点1context.lineTo(x, y);
+根据当前路径进行描边1context.stroke();
+根据当前路径进行填充1context.fill(">
 
 
 
@@ -113,10 +129,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/01/01/canvas基础/"/>
 
 
-  <title> 张泽人的个人博客 </title>
+  <title> canvas基础 | 张泽人的个人博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -137,9 +153,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -216,9 +230,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -238,120 +252,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/10/08/实时预览编辑器/" itemprop="url">
-                  实时预览编辑器
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-08T11:51:49+08:00" content="2016-10-08">
-              2016-10-08
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Markdown 本身就是一个标记语言，可以通过某种方式转换成别的文本格式，本质上转换的过程其实就是做正则解析替换。</p>
-<p>在自己动手操作需要解决几个问题：</p>
-<ul>
-<li>如何将<code>markdown</code>格式字符串转成<code>html</code><ul>
-<li>可以使用一个第三方包：marked</li>
-</ul>
-</li>
-<li>给html设置样式<ul>
-<li>网上有很多markdown的css,这里在github引用一个</li>
-</ul>
-</li>
-<li>给代码块设置颜色高亮<ul>
-<li>引入插件<a href="https://highlightjs.org/" target="_blank" rel="external">highlight.js</a></li>
-</ul>
-</li>
-</ul>
-<p>现在让我们自己动手实践一下具体的操作吧。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>实时预览编辑器<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/github-markdown.css"</span>/&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"highlight/styles/default.css"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"highlight/highlight.pack.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined">hljs.initHighlightingOnLoad()</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">        .markdown-body &#123;</div><div class="line">            box-sizing: border-box;</div><div class="line">            min-width: 200px;</div><div class="line">            max-width: 980px;</div><div class="line">            margin: 0 auto;</div><div class="line">            padding: 45px;</div><div class="line">        &#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">"md"</span> <span class="attr">cols</span>=<span class="string">"50"</span> <span class="attr">rows</span>=<span class="string">"20"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></div><div class="line">       <span class="tag">&lt;<span class="name">pre</span>&gt;</span><span class="tag">&lt;<span class="name">code</span>&gt;</span></div><div class="line">           var foo = 'bar';</div><div class="line">           console.log(foo);</div><div class="line"></div><div class="line">           function fn() &#123;</div><div class="line">           hljs.initHighlightingOnLoad();</div><div class="line">           &#125;</div><div class="line">       <span class="tag">&lt;/<span class="name">code</span>&gt;</span><span class="tag">&lt;/<span class="name">pre</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"container"</span> <span class="attr">class</span>=<span class="string">"markdown-body"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"js/marked.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">    var oMd=document.querySelector("#md");</div><div class="line">    var oContainer=document.querySelector("#container");</div><div class="line">    oMd.addEventListener("keyup", function () &#123;</div><div class="line">        var mdStr=this.value;</div><div class="line">        oContainer.innerHTML= marked(mdStr);</div><div class="line"></div><div class="line">    &#125;);</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/01/canvas基础/" itemprop="url">
-                  canvas基础
-                </a>
+                canvas基础
               
             
           </h1>
@@ -391,9 +292,7 @@
       
 
       
-        
-          
-            <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><h4 id="获取绘图环境"><a href="#获取绘图环境" class="headerlink" title="获取绘图环境"></a>获取绘图环境</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">canvas.getContext();</div></pre></td></tr></table></figure>
+        <h2 id="canvas"><a href="#canvas" class="headerlink" title="canvas"></a>canvas</h2><h4 id="获取绘图环境"><a href="#获取绘图环境" class="headerlink" title="获取绘图环境"></a>获取绘图环境</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">canvas.getContext();</div></pre></td></tr></table></figure>
 <h4 id="设置宽和高"><a href="#设置宽和高" class="headerlink" title="设置宽和高"></a>设置宽和高</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">canvas.width = <span class="number">500</span>;</div><div class="line">canvas.height = <span class="number">500</span>;</div></pre></td></tr></table></figure>
 <h2 id="Context方法"><a href="#Context方法" class="headerlink" title="Context方法"></a>Context方法</h2><h4 id="设置路径的起点"><a href="#设置路径的起点" class="headerlink" title="设置路径的起点"></a>设置路径的起点</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.moveTo(x, y);</div></pre></td></tr></table></figure>
 <h4 id="画路径点"><a href="#画路径点" class="headerlink" title="画路径点"></a>画路径点</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.lineTo(x, y);</div></pre></td></tr></table></figure>
@@ -416,36 +315,59 @@
 <h4 id="线交点"><a href="#线交点" class="headerlink" title="线交点"></a>线交点</h4><p> 默认值为miter<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.lineJoin = <span class="string">'miter'</span> || <span class="string">'round'</span> || <span class="string">'bevel'</span>;</div></pre></td></tr></table></figure></p>
 <h4 id="虚线偏移量"><a href="#虚线偏移量" class="headerlink" title="虚线偏移量"></a>虚线偏移量</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">context.lineDashOffset = 偏移量;</div></pre></td></tr></table></figure>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/canvas/" rel="tag">#canvas</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/08/实时预览编辑器/" rel="prev" title="实时预览编辑器">
+                实时预览编辑器 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -453,6 +375,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -472,8 +398,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/psb.png"
@@ -516,6 +451,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#canvas"><span class="nav-number">1.</span> <span class="nav-text">canvas</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#获取绘图环境"><span class="nav-number">1.0.1.</span> <span class="nav-text">获取绘图环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置宽和高"><span class="nav-number">1.0.2.</span> <span class="nav-text">设置宽和高</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Context方法"><span class="nav-number">2.</span> <span class="nav-text">Context方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#设置路径的起点"><span class="nav-number">2.0.1.</span> <span class="nav-text">设置路径的起点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#画路径点"><span class="nav-number">2.0.2.</span> <span class="nav-text">画路径点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#根据当前路径进行描边"><span class="nav-number">2.0.3.</span> <span class="nav-text">根据当前路径进行描边</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#根据当前路径进行填充"><span class="nav-number">2.0.4.</span> <span class="nav-text">根据当前路径进行填充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#清除路径"><span class="nav-number">2.0.5.</span> <span class="nav-text">清除路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#闭合路径"><span class="nav-number">2.0.6.</span> <span class="nav-text">闭合路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#清除画布"><span class="nav-number">2.0.7.</span> <span class="nav-text">清除画布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#画矩形路径"><span class="nav-number">2.0.8.</span> <span class="nav-text">画矩形路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#画描边矩形"><span class="nav-number">2.0.9.</span> <span class="nav-text">画描边矩形</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#画填充矩形"><span class="nav-number">2.0.10.</span> <span class="nav-text">画填充矩形</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#画弧路径"><span class="nav-number">2.0.11.</span> <span class="nav-text">画弧路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图像绘制"><span class="nav-number">2.0.12.</span> <span class="nav-text">图像绘制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#设置虚拟样式"><span class="nav-number">2.0.13.</span> <span class="nav-text">设置虚拟样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#获取虚拟样式"><span class="nav-number">2.0.14.</span> <span class="nav-text">获取虚拟样式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Context属性"><span class="nav-number">3.</span> <span class="nav-text">Context属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#描边色"><span class="nav-number">3.0.1.</span> <span class="nav-text">描边色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#填充色"><span class="nav-number">3.0.2.</span> <span class="nav-text">填充色</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线宽"><span class="nav-number">3.0.3.</span> <span class="nav-text">线宽</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线帽"><span class="nav-number">3.0.4.</span> <span class="nav-text">线帽</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#线交点"><span class="nav-number">3.0.5.</span> <span class="nav-text">线交点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#虚线偏移量"><span class="nav-number">3.0.6.</span> <span class="nav-text">虚线偏移量</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -619,6 +565,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
